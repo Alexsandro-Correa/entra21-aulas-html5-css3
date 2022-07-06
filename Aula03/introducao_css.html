@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        p{ 
+            /* Utilizando o nome do seletor, todos os seletores desta página recebem esse estilo */
+            background-color: #c1c1c1;
+        }
+
+        .destaque{
+            /* Utilizando PONTO, todos os seletores que tenham o atributo class que contenha esse nome recebem o estilo */
+            background-color: #b6f030;
+        }
+
+        #especifico{
+            /* Utilizando # apenas o seletor que tenha o atributo id="especifico" recebe esse estilo*/
+            border: 1px solid black;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="/css/area51.css">
+</head>
+
+<body">
+    <a class="destaque" id="especifico" href="/index.html"> - Voltar para a página inicial</a>
+    <hr>
+    <!-- Estilo em linha é recomendado quando não passa de 3 atributos -->
+    <p style="color: red;background-color: black;font-weight: bold;">Vermelho</p>
+
+    <h1 style="color: cyan; background-color: black; font-weight: bolder;"> Ciano e negrito com fundo preto.</h1>
+
+    <h3 style="border: 2px dashed black;"> </h3>
+
+    <ul style="font-weight: bold; background:red; width: 200px;">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+    <img style="width: 10%; height: 10%; border-radius: 50%;" src="/Imagens/css.jpg" alt="">
+
+    <div style="text-align: center; border: 1px solid black;">
+        <p>A</p>
+        <p style="color: rgb(168, 51, 197);">B</p>
+        <p class="destaque">C</p>
+    </div>
+
+    <p>Testando CSS</p>
+    
+    <span class="destaque"> No nível organizacional, o novo modelo computacional aqui preconizado nos obriga à migração dos métodos utilizados para localização e correção dos erros. Podemos já vislumbrar o modo pelo qual o crescente aumento da densidade de bytes das mídias imponha um obstáculo ao upgrade para novas versões dos paradigmas de desenvolvimento de software. Por outro lado, a valorização de fatores subjetivos oferece uma interessante oportunidade para verificação das ferramentas OpenSource.
+    </span>
+        <br><br>
+
+        <b class="destaque"> Atributo.classe > Ex: (b.destaque)</b>
+        
+        <br>
+
+        <i id="especifico"> Atributo.classe > Ex: (i#especifico)</i>
+
+        <div>blablabla</div>
+
+</body>
+
+</html>
